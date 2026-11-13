@@ -1,0 +1,31 @@
+{
+  "name": "pi-image-preview",
+  "version": "0.1.0",
+  "description": "Always-visible pasted image previews above the Pi editor",
+  "type": "module",
+  "license": "MIT",
+  "repository": "github:2418554463/pi-image-preview",
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@napi-rs/image": "^1.16.0"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.74.0",
+    "@earendil-works/pi-tui": "^0.74.0",
+    "@types/node": "^25.0.0",
+    "typescript": "^6.0.3",
+    "vitest": "^3.0.0"
+  }
+}
